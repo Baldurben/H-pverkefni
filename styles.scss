@@ -15,10 +15,46 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
 
-  // TODO fleiri grunn stillingar
+  <! TODO fleiri grunn stillingar
+}
+footer {
+	background-color:#33C0FF;
+	padding-bottom: 3em;
+}
+footer li {
+	color:#fff;
+	
+}
+.footer__container {
+	padding-top:1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+li {
+	list-style: none;
+	padding-top: 0.5em; 
+}
+.footer__1 {
+	
+}
+.footer__2 {
+	
+}
+
+.footer__3 {
+	
+}
+
+.footer__4 {
+	
+}
+
+header{
+	background-color#333;
 }
 
 
-
-// TODO sækja allar sass skrár
+<! TODO sækja allar sass skrár
 @import "scss/...";
+
