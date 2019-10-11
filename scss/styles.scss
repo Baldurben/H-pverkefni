@@ -15,7 +15,7 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
 
-  <! TODO fleiri grunn stillingar
+  /*<! TODO fleiri grunn stillingar */
 }
 header {
 	background-color:#FF5500;
@@ -27,7 +27,7 @@ header {
 }
 .header__links {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-around;	
 }
 footer {
 	background-color:#33C0FF;
@@ -64,6 +64,6 @@ li {
 
 
 
-<! TODO sækja allar sass skrár
-@import "scss/...";
+/*<! TODO sækja allar sass skrár
+@import "scss/...";*/
 

@@ -1,0 +1,21 @@
+{
+  "name": "verkefni7",
+  "version": "1.0.0",
+  "description": "verkefni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baldurben/H-pverkefni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baldurben/H-pverkefni/issues"
+  },
+  "homepage": "https://github.com/Baldurben/H-pverkefni#readme"
+}
+
