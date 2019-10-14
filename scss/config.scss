@@ -1,4 +1,44 @@
 // TODO stillingar hér
+
+//Stærðir
+$max-width: 1200px;
+$gutter: 20px;
+
+//Litapalletta
+$orange: #ff5000;
+$black: #000000;
+$white: #fffcf2;
+$blue: #00b7ff;
+
+//Leturgerðir
+@font-face {
+  font-family: 'Oswald';
+  src: url(fonts/Oswald-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans-Italic.ttf);
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+
 .hello {
   color:#333;
 }

@@ -4,10 +4,8 @@
   "description": "verkefni",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch --recursive styles.scss styles.css",
     "lint": "stylelint styles.scss --syntax scss"
   },
   "repository": {

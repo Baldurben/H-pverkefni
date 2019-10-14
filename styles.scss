@@ -1,4 +1,4 @@
-@import "scss/config";
+@import "scss/config.scss";
 
 * {
   padding: 0;
@@ -11,59 +11,25 @@
   box-sizing: inherit;
 }
 
+//Grunnstilla html elementið
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
 
-  <! TODO fleiri grunn stillingar
-}
-header {
-	background-color:#FF5500;
-	padding-bottom: 1.5em;
-}
-.header__heading {
-	display: flex;
-	justify-content: center;
-}
-.header__links {
-	display: flex;
-	justify-content: space-around;
-}
-footer {
-	background-color:#33C0FF;
-	padding-bottom: 3em;
-}
-footer li {
-	color:#fff;
-	
-}
-.footer__container {
-	padding-top:1em;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-li {
-	list-style: none;
-	padding-top: 0.5em; 
-}
-.footer__1 {
-	
-}
-.footer__2 {
-	
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  /* TODO fleiri grunn stillingar */
 }
 
-.footer__3 {
-	
+//Grunnstilla letur sem notað er í fyrirsögnum
+h1, h2, h3, h4, h5, h6 { /* stylelint-disable-line */ 
+	font-family: 'Oswald', Verdana, serif;
+	letter-spacing: 2.5px;
 }
 
-.footer__4 {
-	
-}
+/* TODO sækja allar sass skrár
+@import "scss/..."; */
 
-
-
-<! TODO sækja allar sass skrár
-@import "scss/...";
+@import "scss/header.scss";
+@import "scss/footer.scss";
 

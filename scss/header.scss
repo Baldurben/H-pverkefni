@@ -1,0 +1,50 @@
+
+.header {
+    background-color: $orange;
+    color: $black;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__heading {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $gutter;
+}
+
+.nav {
+    width: 100%;
+    max-width: $max-width;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    margin-bottom: $gutter;
+}
+
+.nav__pages {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav__cart {
+    width: 25%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $black;
+    text-transform: uppercase;
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
+}
