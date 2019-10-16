@@ -42,33 +42,166 @@ Kortanúmer:
 
 Korthafi:
 
+        <h2>Almennar upplýsingar</h2>
         <div>
-            <label for="gildistími">Gildistími:  Mán</label>
-            <select name="gildistími" id="gildistími">
-                <option disabled selected value> 01
-                </option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-				<option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-				<option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-            </select>
-			<label for="gildistími"> Ár </label>
-			 <select name="gildistími" id="gildistími">
-                <option disabled selected value> 2019
-                </option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-				</select>
+            <label for="nafn">Nafn:</label>
+            <input type="text" id="nafn" required>
+        </div>
+        <div>
+            <label for="heimilsfang">Heimilisfang:</label>
+            <input type="address" id="heimilsfang" required>
+        </div>
+ 
+        <div>
+            <label for="postnumer">Póstnúmer:</label>
+			<select name= "postnumer" id ="postnumer">
+			<option selected value = "101">Reykjavík 101</option>
+			<option value = "102">Reykjavík 102</option>
+			<option value = "103">Reykjavík 103</option>
+			<option value = "104">Reykjavík 104</option>
+			<option value = "105">Reykjavík 105</option>
+			<option value = "107">Reykjavík 107</option>
+			<option value = "108">Reykjavík 108</option>
+			<option value = "109">Reykjavík 109</option>
+			<option value = "110">Reykjavík 110</option>
+			<option value = "111">Reykjavík 111</option>
+			<option value = "112">Reykjavík 112</option>
+			<option value = "113">Reykjavík 113</option>
+			<option value = "116">Reykjavík 116</option>
+			<option value = "121">Reykjavík 121</option>
+			<option value = "123">Reykjavík 123</option>
+			<option value = "124">Reykjavík 124</option>
+			<option value = "125">Reykjavík 125</option>
+			<option value = "127">Reykjavík 127</option>
+			<option value = "128">Reykjavík 128</option>
+			<option value = "129">Reykjavík 129</option>
+			<option value = "130">Reykjavík 130</option>
+			<option value = "132">Reykjavík 132</option>
+			<option value = "150">Reykjavík 150</option>
+			<option value = "155">Reykjavík 155</option>
+			<option value = "170">Seltjarnarnes 170</option>
+			<option value = "172">Seltjarnarnes 172</option>
+			<option value = "190">Vogar 190</option>
+			<option value = "200">Kópavogur 200</option>
+			<option value = "201">Kópavogur 201</option>
+			<option value = "202">Kópavogur 202</option>
+			<option value = "203">Kópavogur 203</option>
+			<option value = "210">Garðabær 210</option>
+			<option value = "212">Garðabær 212</option>
+			<option value = "220">Hafnarfjörður 220</option>
+			<option value = "221">Hafnarfjörður 221</option>
+			<option value = "222">Hafnarfjörður 222</option>
+			<option value = "225">Álftanes 225</option>
+			<option value = "230">Reykjanesbær 230</option>
+			<option value = "232">Reykjanesbær 232</option>
+			<option value = "233">Reykjanesbær 233</option>
+			<option value = "235">Reykjanesbær 235</option>
+			<option value = "240">Grindavík 240</option>
+			<option value = "245">Sandgerði 245</option>
+			<option value = "250">Garður 250</option>
+			<option value = "260">Reykjanesbær 260</option>
+			<option value = "270">Mosfellsbær 270</option>
+			<option value = "271">Mosfellsbær 271</option>
+			<option value = "276">Mosfellsbær 276</option>
+			<option value = "300">Akranes 300</option>
+			<option value = "301">Akranes 301</option>
+			<option value = "302">Akranes 302</option>
+			<option value = "310">Borgarnes 310</option>
+			<option value = "311">Borgarnes 311</option>
+			<option value = "320">Reykholt 320</option>
+			<option value = "340">Stykkishólmur 340</option>
+			<option value = "345">Flatey 345</option>
+			<option value = "350">Grundarfjörður 350</option>
+			<option value = "355">Ólafsvík 355</option>
+			<option value = "356">Snæfellsbær 356</option>
+			<option value = "360">Hellissandur 360</option>
+			<option value = "370">Búðardalur 370</option>
+			<option value = "371">Búðardalur 371</option>
+			<option value = "380">Reykhólahrepp 380</option>
+			<option value = "400">Ísafjörður 400</option>
+			<option value = "401">Ísafjörður 401</option>
+			<option value = "410">Hnífsdalur 410</option>
+			<option value = "415">Bolungarvík 415</option>
+			<option value = "420">Súðavík 420</option>
+			<option value = "425">Flateyri 425</option>
+			<option value = "430">Suðureyri 430</option>
+			<option value = "450">Patreksfjörðu 450</option>
+			<option value = "451">Patreksfjörðu 451</option>
+			<option value = "460">Tálknafjörður 460</option>
+			<option value = "465">Bíldudalur 465</option>
+			<option value = "470">Þingeyri 470</option>
+			<option value = "471">Þingeyri 471</option>
+			<option value = "510">Hólmavík 510</option>
+			<option value = "512">Hólmavík 512</option>
+			<option value = "520">Drangsnes 520</option>
+			<option value = "524">Árneshreppur 524</option>
+			<option value = "530">Hvammstangi 530</option>
+			<option value = "531">Hvammstangi 531</option>
+			<option value = "540">Blönduós 540</option>
+			<option value = "541">Blönduós 541</option>
+			<option value = "545">Skagaströnd 545</option>
+			<option value = "550">Sauðárkrókur 550</option>
+			<option value = "551">Sauðárkrókur 551</option>
+			<option value = "560">Varmahlíð 560</option>
+			<option value = "565">Hofsós 565</option>
+			<option value = "566">Hofsós 566</option>
+			<option value = "570">Fljót 570</option>
+			<option value = "580">Siglufjörður 580</option>
+			<option value = "600">Akureyri 600</option>
+			<option value = "601">Akureyri 601</option>
+			<option value = "602">Akureyri 602</option>
+			<option value = "603">Akureyri 603</option>
+			<option value = "610">Grenivík 610</option>
+			<option value = "611">Grímsey 611</option>
+			<option value = "620">Dalvík 620</option>
+			<option value = "621">Dalvík 621</option>
+			<option value = "625">Ólafsfjörður 625</option>
+			<option value = "630">Hrísey 630</option>
+			<option value = "640">Húsavík 640</option>
+			<option value = "641">Húsavík 641</option>
+			<option value = "645">Fosshóll 645</option>
+			<option value = "650">Laugar 650</option>
+			<option value = "660">Mývatn 660</option>
+			<option value = "670">Kópasker 670</option>
+			<option value = "671">Kópaskeri 671</option>
+			<option value = "675">Raufarhöfn 675</option>
+			<option value = "680">Þórshöfn 680</option>
+			<option value = "681">Þórshöfn 681</option>
+			<option value = "685">Bakkafjörður 685</option>
+			<option value = "690">Vopnafjörður 690</option>
+			<option value = "700">Fellabær 700</option>
+			<option value = "701">Egilsstaðir 701</option>
+			<option value = "710">Seyðisfjörður 710</option>
+			<option value = "715">Mjóifjörður 715</option>
+			<option value = "720">Borgarfjörður 720</option>
+			<option value = "730">Reyðarfjörður 730</option>
+			<option value = "735">Eskifjörður 735</option>
+			<option value = "740">Neskaupstaður 740</option>
+			<option value = "750">Fáskrúðsfjörð 750</option>
+			<option value = "755">Stöðvarfjörðu 755</option>
+			<option value = "760">Breiðdalsvík 760</option>
+			<option value = "765">Djúpivogur 765</option>
+			<option value = "780">Höfn 780</option>
+			<option value = "781">Höfn 781</option>
+			<option value = "785">Öræfi 785</option>
+			<option value = "800">Selfoss 800</option>
+			<option value = "801">Selfoss 801</option>
+			<option value = "802">Selfoss 802</option>
+			<option value = "810">Hveragerði 810</option>
+			<option value = "815">Þorlákshöfn 815</option>
+			<option value = "816">Ölfus 816</option>
+			<option value = "820">Eyrarbakki 820</option>
+			<option value = "825">Stokkseyri 825</option>
+			<option value = "840">Laugarvatn 840</option>
+			<option value = "845">Flúðir 845</option>
+			<option value = "850">Hella 850</option>
+			<option value = "851">Hella 851</option>
+			<option value = "860">Hvolsvöllur 860</option>
+			<option value = "861">Hvolsvöllur 861</option>
+			<option value = "870">Vík 870</option>
+			<option value = "871">Vík 871</option>
+			<option value = "880">Kirkjubæjarklaustur 880</option>
+			</select>
         </div>
 		<legend>Almennar upplýsingar</legend>
         <div>
@@ -86,9 +219,7 @@ Korthafi:
         <div>
             <label for="námskeið">Námskeið:</label>
 			<select name= "namskeið" id ="namskeið">
-			<option selected value> V0 - V1
-			</option>
-			<option value="V0 - V1">V0-V1</option>
+			<option selected value> V0 - V1 </option>
 			<option value="V2 - V4">V2-V4</option>
 			<option value="V5 - V7">V5-V7</option>
 			<option value="fjallaklifur">Fjallaklifur námskeið</option>
