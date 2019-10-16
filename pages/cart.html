@@ -42,24 +42,59 @@ Kortanúmer:
 
 Korthafi:
 
-Gildistími:
-Mán
-01
-02
-03
-04
-05
-06
-07
-08
-09
-10
-11
-12
-Ár
-2019
-2020
-2021
-2022
+        <div>
+            <label for="gildistími">Gildistími:  Mán</label>
+            <select name="gildistími" id="gildistími">
+                <option disabled selected value> 01
+                </option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+				<option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+				<option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+			<label for="gildistími"> Ár </label>
+			 <select name="gildistími" id="gildistími">
+                <option disabled selected value> 2019
+                </option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+				</select>
+        </div>
+		<legend>Almennar upplýsingar</legend>
+        <div>
+            <label for="nafn">Nafn:</label>
+            <input type="text" id="nafn" required>
+        </div>
+        <div>
+            <label for="heimilsfang">Heimilisfang:</label>
+            <input type="address" id="heimilsfang" required>
+        </div>
+        <div>
+            <label for="aldur">Aldur:</label>
+            <input type="age" id="aldur" required>
+        </div>
+        <div>
+            <label for="námskeið">Námskeið:</label>
+			<select name= "namskeið" id ="namskeið">
+			<option selected value> V0 - V1
+			</option>
+			<option value="V0 - V1">V0-V1</option>
+			<option value="V2 - V4">V2-V4</option>
+			<option value="V5 - V7">V5-V7</option>
+			<option value="fjallaklifur">Fjallaklifur námskeið</option>
+            Lykilorð verða að vera eins
+        </div>
+
+
 
 Kaupa
