@@ -6,7 +6,9 @@
   "scripts": {
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch --recursive styles.scss styles.css",
-    "lint": "stylelint styles.scss --syntax scss"
+    "lint-scss": "stylelint styles.scss --syntax scss",
+    "lint-scss-folder": "stylelint scss/*.scss --syntax scss",
+    "lint-css": "stylelint styles.css --syntax css"
   },
   "repository": {
     "type": "git",

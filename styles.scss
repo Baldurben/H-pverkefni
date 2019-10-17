@@ -16,14 +16,19 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
 
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  /* TODO fleiri grunn stillingar */
 }
 
 //Grunnstilla letur sem notað er í fyrirsögnum
 h1, h2, h3, h4, h5, h6 { /* stylelint-disable-line */ 
-	font-family: 'Oswald', Verdana, serif;
+  font-family: Oswald, Verdana, serif;
+}
+
+//Grunnstilla padding á main elementið
+main { /* stylelint-disable-line */
+  padding-right: $gutter;
+  padding-left: $gutter;
 }
 
 /* TODO sækja allar sass skrár
