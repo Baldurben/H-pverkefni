@@ -3,6 +3,8 @@
   background-color: $blue;
   padding-left: $gutter;
   padding-right: $gutter;
+  margin: 0 auto;
+  max-width: $max-width;
 }
 
 .footer__row {
