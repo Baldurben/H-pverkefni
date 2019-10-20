@@ -25,14 +25,30 @@
     </header>
 
     <main>
-      <h2>Allar vörurnar</h2>
-      <p>Prílihúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
-      <!--Takki-->
+      <div class="grid">
+        <div class="grid__row">
 
-      <h2>Besta starfsfólkið</h2>
-      <p>Starfsfólkið okkar hugsar vel um þig.</p>
-      <!--Takki-->
+          <div class="grid__col">
+            <img class="grid__image" alt="Vörur" src="img/products.jpg">
+          </div>
 
+          <div class="grid__col grid__col--higher-order">
+            <h2 class="grid__heading">Allar vörurnar</h2>
+            <p class="grid__text">Prílihúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
+            <button class="grid__button">Skoða vörur</button>
+          </div>
+
+          <div class="grid__col">
+            <h2 class="grid__heading">Besta starfsfólkið</h2>
+            <p class="grid__text">Starfsfólkið okkar hugsar vel um þig.</p>
+            <button class="grid__button">Kynnast starfsfólki</button>
+          </div>
+
+          <div class="grid__col">
+              <img class="grid__image" alt="Liðsheild" src="img/team.jpg">
+            </div>
+        </div>
+      </div>
     </main>
   
     <footer class="footer">
