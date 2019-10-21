@@ -23,15 +23,25 @@
 
 .grid__col {
   display: flex;
-  width: 50%;
+  width: 100%;
   padding-right: $gutter * 0.5;
   padding-left: $gutter * 0.5;
   margin-top: $gutter;
   margin-bottom: $gutter;
   flex-direction: column;
 
-  @media (max-width: 750px) {
-    width: 100%;
+  //m: medium, 6/12 columns, semsagt þegar við höfum millibreitt tæki (milli 750 - 1100 px), þá tekur col 50% af síðu
+  &--m-6 {
+    @media (min-width: 750px) {
+      width: 50%;
+    }
+  }
+
+  //l: large, 4/12 columns, semsagt þegar við höfum mjög breitt tæki (>1100 px), þá tekur col 33.33% af síðu
+  &--l-4 {
+    @media (min-width: 1100px) {
+      width:33.33333333%;
+    }
   }
 
   @media (max-width: 900px) {
@@ -39,18 +49,75 @@
   }
 }
 
-.grid__heading {
-  width: 100%;
-  margin-top: 0;
+.--top-margin {
+  margin-top: $gutter;
+}
+
+.--bottom-margin{
   margin-bottom: $gutter;
+}
+
+.grid__h2 {
+  width: 100%;
   font-size: 36px;
+}
+
+.grid__h3 {
+  width: 100%;
+  font-size: 24px;
 }
 
 .grid__text {
   width: 100%;
   margin-top: $gutter;
   margin-bottom: $gutter;
-  font-size: 21px;
+  font-size: 24px;
+}
+
+.grid__description {
+  width: 100%;
+  min-height: 44px;
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+}
+
+.grid__add-to-cart {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid__add-to-cart__label {
+  width: 100%;
+}
+
+.grid__add-to-cart__input {
+  width: 56%;
+  padding: $gutter * 0.5;
+  border: 1px solid $black;
+  border-radius: 3px;
+}
+
+.grid__add-to-cart__button {
+  width: 40%;
+  padding: $gutter * 0.5;
+  border: 1px solid $black;
+  border-radius: 3px;
+  font-size: 16px;
+
+  &::before {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+    content: "";
+    background: url("img/cart.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .grid__button {
@@ -60,6 +127,7 @@
   padding-top: $gutter * 0.5;
   padding-bottom: $gutter * 0.5;
 
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: $black;
   background-color: $blue;
