@@ -25,11 +25,12 @@
     </header>
 	
 		<main>
+		<!-- nota grid scssið aftur í stað þess að skrifa nýtt grid fyrir þessa síðu -->
       <div class="grid">
         <div class="grid__row">
           <div class="grid__col grid__col--m-6">
-             <h2 class="grid__h2 --bottom-margin">Námskeið</h2>
-            <p class="grid__text">býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p></p>
+             <h2 class="course__h2 --bottom-margin">Námskeið</h2>
+            <p class="course__text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p></p>
           </div>
 		  <div class="grid__col grid__col--m-6 grid__col--higher-order">
               <img class="grid__image" alt="Klifur íþróttarsalur" src="../img/climbing-gym.jpg">
@@ -37,22 +38,22 @@
 			
 			
 			 <div class="grid__col grid__col--m-6">
-		  <h2 class="grid__h2 --bottom-margin">Almennar upplýsingar</h2>
-            <p class="grid__text"><div>
+		  <h2 class="course__h2">Almennar upplýsingar</h2>
+            <p class="course__text"><div>
             <label for="nafn">Nafn:</label>
-            <input type="text" id="nafn" required>
+            <input class = "course__standard-input" type="text" id="nafn" required>
         </div>
         <div>
             <label for="heimilsfang">Heimilisfang:</label>
-            <input type="address" id="heimilsfang" required>
+            <input class = "course__standard-input" type="address" id="heimilsfang" required>
         </div>
         <div>
             <label for="aldur">Aldur:</label>
-            <input type="age" id="aldur" required>
+            <input class = "course__standard-input" type="age" id="aldur" required>
         </div>
         <div>
             <label for="námskeið">Námskeið:</label>
-			<select name= "namskeið" id ="namskeið">
+			<select class = "course__standard-input" name= "namskeið" id ="namskeið">
 			<option selected value> V0 - V1 </option>
 			<option value="V2 - V4">V2-V4</option>
 			<option value="V5 - V7">V5-V7</option>
@@ -65,19 +66,22 @@
 
 
           <div class="grid__col grid__col--m-6">
-            <h2 class="grid__h2 --bottom-margin">Greiðsluupplýsingar</h2>
-            <p class="grid__text">
+            <h2 class="course__h2">Greiðsluupplýsingar</h2>
+            <p class="course__text">
 		<div>
-            <label for="kortanumer">Kortanúmer::</label>
-            <input type="kort" id="kortanumer" required>
+            <label for="kortanumer">Kortanúmer:</label>
+            <input class = "course__standard-input" type="kort" id="kortanumer" required>
         </div>
 		<div>
             <label for="korthafi">Korthafi:</label>
-            <input type="korthafi" id="korthafi" required>
+            <input class = "course__standard-input" type="korthafi" id="korthafi" required>
         </div>
 		<div>
-            <label for="gildistími">Gildistími:  Mán</label>
-            <select name="gildistími" id="gildistími">
+		<div class ="flex">
+			<span>Gildistími:</span>
+			
+            <label for="gildistími">Mán</label>
+            <select class = "course__small-input" name="gildistími" id="gildistími">
                 <option selected value> 01 </option>
                 <option value="02">02</option>
                 <option value="03">03</option>
@@ -91,8 +95,9 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
             </select>
+			
 			<label for="gildistími"> Ár </label>
-			 <select name="gildistími" id="gildistími">
+			 <select class = "course__small-input" name="gildistími" id="gildistími">
                 <option selected value> 2019 </option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
@@ -100,6 +105,7 @@
                 <option value="2022">2022</option>
 				</select></p>
           </div>
+		  </div>
 		  </div>
 		  <button class="grid__button">Skrá</button>
 
