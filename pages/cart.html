@@ -24,61 +24,79 @@
   </nav>
 </header>
 
-<h2>Vörur í körfu</h2>
+<main>
+  <h2>Vörur í körfu</h2>
 
-<img class="grid__image" alt="Bakpoki" src="../img/Backpack.jpg">
+  <div class="grid">
+    <div class="grid__row">
 
+      <div class="grid__col grid__col--m-6">
+        <img class="grid__image" alt="Bakpoki" src="../img/Backpack.jpg">
+      </div>
 
-<h2>Bakpoki</h2>
-<p>Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
+      <div class="grid__col grid__col--m-6 grid__col--higher-order">
+        <h2 class="grid__h2 --bottom-margin">Bakpoki</h2>
+        <p class="grid__text">Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
 
+        <h3>49.900 kr.-</h3>
 
-<h3>49.900 kr.-</h3>
-
-<div class="grid__add-to-cart">
-  <label class="grid__add-to-cart__label" for="bakpoki">Fjöldi:</label>
-  <input class="grid__add-to-cart__input" type="number" id="bakpoki" value="1">
-  <button class="grid__add-to-cart__button">Setja í körfu</button>
-</div>
-
-Fjöldi:
-2
-Uppfæra
-Eyða úr körfu
-
-<img class="grid__image" alt="Kalkpoki" src="../img/chalkbag.jpg">
-
-
-<h2>Kalkpoki</h2>
-<p>Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
-
-<h3>4.900 kr.-</h3>
-
-<div class="grid__add-to-cart">
-  <label class="grid__add-to-cart__label" for="bakpoki">Fjöldi:</label>
-  <input class="grid__add-to-cart__input" type="number" id="bakpoki" value="1">
-  <button class="grid__add-to-cart__button">Setja í körfu</button>
-</div>
-
-Fjöldi:
-4
-Uppfæra
-Eyða úr körfu
-
-        <h2>Sendingarupplýsingar</h2>
-        <div>
-            <label for="nafn">Nafn:</label>
-            <input type="text" id="nafn" required>
+        <div class="grid__add-to-cart">
+          <label class="grid__add-to-cart__label" for="bakpoki">Fjöldi:</label>
+          <input class="grid__add-to-cart__input" type="number" id="bakpoki" value="1">
+          <button class="grid__add-to-cart__button">Uppfæra</button>
+          <button class="grid__add-to-cart__button">Eyða úr körfu</button>
         </div>
-        <div>
-            <label for="heimilsfang">Heimilisfang:</label>
-            <input type="address" id="heimilsfang" required>
+
+      </div>
+    </div>
+  </div>
+
+
+
+      <div class="grid">
+        <div class="grid__row">
+
+          <div class="grid__col grid__col--m-6">
+            <img class="grid__image" alt="Kalkpoki" src="../img/chalkbag.jpg">
+          </div>
+
+          <div class="grid__col grid__col--m-6 grid__col--higher-order">
+            <h2 class="grid__h2 --bottom-margin">Kalkpoki</h2>
+            <p class="grid__text">Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
+
+            <h3>4.900 kr.-</h3>
+
+            <div class="grid__add-to-cart">
+              <label class="grid__add-to-cart__label" for="kalkpoki">Fjöldi:</label>
+              <input class="grid__add-to-cart__input" type="number" id="kalkpoki" value="1">
+              <button class="grid__add-to-cart__button">Uppfæra</button>
+              <button class="grid__add-to-cart__button">Eyða úr körfu</button>
+            </div>
+
+          </div>
         </div>
+      </div>
+
+
+  <div class="grid__col grid__col--m-6">
+    <h2 class="course__h2">Sendingarupplýsingar</h2>
+    <p class="course__text">
+  <div>
+    <label for="nafn">Nafn:</label>
+    <input class = "course__standard-input" type="text" id="nafn" required>
+  </div>
+
+    <div>
+      <label for="heimilsfang">Heimilisfang:</label>
+      <input class = "course__standard-input" type="text" id="heimilsfang" required>
+    </div>
+  </div>
+
 
         <div>
             <label for="postnumer">Póstnúmer:</label>
-			<select name= "postnumer" id ="postnumer">
-			<option selected value = "101">Reykjavík 101</option>
+			<select class="course__standard-input" name= "postnumer" id ="postnumer">
+			<option value = "101">Reykjavík 101</option>
 			<option value = "102">Reykjavík 102</option>
 			<option value = "103">Reykjavík 103</option>
 			<option value = "104">Reykjavík 104</option>
@@ -224,46 +242,55 @@ Eyða úr körfu
 			<option value = "870">Vík 870</option>
 			<option value = "871">Vík 871</option>
 			<option value = "880">Kirkjubæjarklaustur 880</option>
-			</select>
+      </select>
         </div>
 
-		<h2>Greiðsluupplýsingar</h2>
-        <div>
-            <label for="nafn">Kortanúmer:</label>
-            <input type="text" id="nafn" required>
-        </div>
-        <div>
-            <label for="heimilsfang">Korthafi:</label>
-            <input type="address" id="heimilsfang" required>
-        </div>
+    <div class="grid__col grid__col--m-6">
+      <h2 class="course__h2">Greiðsluupplýsingar</h2>
+      <p class="course__text">
+      <div>
+        <label for="kortanumer">Kortanúmer:</label>
+        <input class = "course__standard-input" type="number" id="kortanumer" required>
+      </div>
+      <div>
+        <label for="korthafi">Korthafi:</label>
+        <input class = "course__standard-input" type="text" id="korthafi" required>
+      </div>
+      <div>
+        <div class ="flex">
+          <span>Gildistími:</span>
 
-        <div>
-            <label for="gildistími">Gildistími:  Mán</label>
-            <select name="gildistími" id="gildistími">
-              <option selected value> 01 </option>
-              <option value="02">02</option>
-              <option value="03">03</option>
-              <option value="04">04</option>
-              <option value="05">05</option>
-              <option value="06">06</option>
-              <option value="07">07</option>
-              <option value="08">08</option>
-              <option value="09">09</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-            <label for="gildistími"> Ár </label>
-            <select name="gildistími" id="gildistími">
-              <option selected value> 2019 </option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-            </select></p>
+          <label for="gildistími">Mán</label>
+          <select class = "course__small-input" name="gildistími" id="Gildistími">
+            <option selected value> 01 </option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+
+          <label for="gildistími"> Ár </label>
+          <select class = "course__small-input" name="Ár" id="ar">
+            <option selected value> 2019 </option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
         </div>
+      </div>
+    </div>
 
     <button class="grid__button">Kaupa</button>
+
+</main>
 
 <footer class="footer">
   <div class="footer__container">
