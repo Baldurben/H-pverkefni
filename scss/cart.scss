@@ -15,11 +15,13 @@
   padding: $gutter * 0.5;
   border: 1px solid $black;
   border-radius: 3px;
+  font-size: 20px;
 }
 
 .flex__cart {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .cart__add-to-cart__button {
@@ -49,3 +51,4 @@
     background-size: cover;
   }
 }
+

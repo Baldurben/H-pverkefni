@@ -23,20 +23,20 @@
         </div>
       </nav>
     </header>
-	
+
 		<main>
 		<!-- nota grid scssið aftur í stað þess að skrifa nýtt grid fyrir þessa síðu -->
       <div class="grid">
         <div class="grid__row">
           <div class="grid__col grid__col--m-6">
              <h2 class="course__h2">Námskeið</h2>
-            <p class="course__text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p></p>
+            <p class="course__text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
           </div>
 		  <div class="grid__col grid__col--m-6 grid__col--higher-order">
               <img class="grid__image" alt="Klifur íþróttarsalur" src="../img/climbing-gym.jpg">
             </div>
-			
-			
+
+
 			 <div class="grid__col grid__col--m-6">
 		  <h2 class="course__h2">Almennar upplýsingar</h2>
             <p class="course__text"><div>
@@ -45,14 +45,14 @@
         </div>
         <div>
             <label for="heimilsfang">Heimilisfang:</label>
-            <input class = "course__standard-input" type="address" id="heimilsfang" required>
+            <input class = "course__standard-input" type="text" id="heimilsfang" required>
         </div>
         <div>
             <label for="aldur">Aldur:</label>
-            <input class = "course__standard-input" type="age" id="aldur" required>
+            <input class = "course__standard-input" type="text" id="aldur" required>
         </div>
         <div>
-            <label for="námskeið">Námskeið:</label>
+            <label for="namskeið">Námskeið:</label>
 			<select class = "course__standard-input" name= "namskeið" id ="namskeið">
 			<option selected value> V0 - V1 </option>
 			<option value="V2 - V4">V2-V4</option>
@@ -60,9 +60,8 @@
 			<option value="fjallaklifur">Fjallaklifur námskeið</option>
 			</select>
         </div>
-		</p>
 		</div>
-			
+
 
 
           <div class="grid__col grid__col--m-6">
@@ -70,17 +69,17 @@
             <p class="course__text">
 		<div>
             <label for="kortanumer">Kortanúmer:</label>
-            <input class = "course__standard-input" type="kort" id="kortanumer" required>
+            <input class = "course__standard-input" type="text" id="kortanumer" required>
         </div>
 		<div>
             <label for="korthafi">Korthafi:</label>
-            <input class = "course__standard-input" type="korthafi" id="korthafi" required>
+            <input class = "course__standard-input" type="text" id="korthafi" required>
         </div>
 		<div>
 			<div class ="flex">
 			<span>Gildistími:</span>
-			
-			
+
+
             <label for="gildistími">Mán</label>
             <select class = "course__small-input" name="gildistími" id="gildistími">
                 <option selected value> 01 </option>
@@ -96,24 +95,27 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
             </select>
-			
+
 			<label for="gildistími"> Ár </label>
-			 <select class = "course__small-input" name="gildistími" id="gildistími">
+			 <select class = "course__small-input" name="ar" id="ar">
                 <option selected value> 2019 </option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
-				</select></p>
+       </select>
           </div>
 		  </div>
 		  </div>
 		  <button class="grid__button">Skrá</button>
 
-         
+        </div>
+      </div>
     </main>
-			
-			
+  </body>
+
+
+
 		<footer class="footer">
       <div class="footer__container">
         <div class = "footer__row">
@@ -128,7 +130,7 @@
               <li class="footer__list__item"><a class="footer__list__item__link" href="products.html">Magnaðar vörur</a></li>
             </ul>
           </div>
-          
+
           <div class = "footer__col">
             <h3 class="footer__heading">Vöruflokkar</h3>
             <ul class="footer__list">
@@ -139,7 +141,7 @@
               <li class="footer__list__item"><a class="footer__list__item__link" href="products.html">Klikkaðar vörur</a></li>
             </ul>
           </div>
-          
+
           <div class = "footer__col">
             <h3 class="footer__heading">Námskeið</h3>
             <ul class="footer__list">
@@ -149,7 +151,7 @@
               <li class="footer__list__item"><a class="footer__list__item__link" href="course.html">Fjallaklifur námskeið</a></li>
             </ul>
           </div>
-          
+
           <div class = "footer__col">
             <h3 class="footer__heading">Síður</h3>
             <ul class="footer__list">
