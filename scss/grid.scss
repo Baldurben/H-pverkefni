@@ -46,12 +46,15 @@
     justify-content: space-between;
   }
 }
-
-.--top-margin {
+.grid--top-bot-margin{
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+}
+.grid--top-margin {
   margin-top: $gutter;
 }
 
-.--bottom-margin{
+.grid--bottom-margin{
   margin-bottom: $gutter;
 }
 
@@ -67,8 +70,6 @@
 
 .grid__text {
   width: 100%;
-  margin-top: $gutter;
-  margin-bottom: $gutter;
   font-size: 24px;
 }
 
@@ -90,6 +91,7 @@
 .grid__add-to-cart__label {
   width: 100%;
 }
+
 
 .grid__add-to-cart__input {
   width: 56%;
@@ -151,4 +153,90 @@
 .grid__image {
   max-width: 100%;
 }
+.grid__cart {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.grid__cart__add-to-cart__input {
+  width: 20%;
+  padding: $gutter * 0.5;
+  border: 1px solid $black;
+  border-radius: 3px;
+  font-size: 20px;
+  margin-right: $gutter * 0.5;
+}
+.grid__cart__add-to-cart__button {
+  width: 30%;
+  padding: $gutter * 0.5;
+  border: 1px solid $black;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: $gutter * 0.5;
+
+
+
+  &:hover {
+    background-color: #00b7ff;
+  }
+
+  &::before {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+    content: "";
+    background: url("img/cart.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.grid__cart__add-to-cart {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+.grid__cart__flex-price{
+  display: flex;
+  height: 60%;
+  align-items: flex-end;
+}
+.grid__cart__add-to-cart__label{
+  width: 100%
+}
+.grid__standard-input {
+  width: 70%;
+  padding: $gutter * 0.5;
+  margin-bottom: 15px;
+  border: 1px solid $black;
+  border-radius: 1px;
+  float: right;
+}
+.grid__small-input{
+  
+  padding: $gutter * 0.5;
+  margin-bottom: 10px;
+  border: 1px solid $black;
+  border-radius: 1px;
+}
+.flex{
+  display: flex;
+  justify-content: flex-end;
+  width:70%;
+}
+.flex2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+}
+
+
+
+
+
 

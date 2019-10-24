@@ -28,7 +28,7 @@
 
 
   <div class="grid">
-  <h2 class="course__h2">Vörur í körfu</h2>
+  <h2 class="grid__h2">Vörur í körfu</h2>
     <div class="grid__row">
 
       <div class="grid__col grid__col--m-6">
@@ -41,12 +41,12 @@
 		<div class = cart__flex-price>
         <h3 class="grid__h3 --bottom-margin">49.900 kr.-</h3>
 		</div>
-       <div class="flex__cart">
-        <div class="cart__add-to-cart">
-          <label class="cart__add-to-cart__label" for="bakpoki">Fjöldi:</label>
-          <input class="cart__add-to-cart__input" type="number" id="bakpoki" value="1">
-          <button class="cart__add-to-cart__button">Uppfæra</button>
-          <button class="cart__add-to-cart__button">Eyða úr körfu</button>
+       <div class="grid__cart">
+        <div class="grid__cart__add-to-cart">
+          <label class="grid__cart__add-to-cart__label" for="bakpoki">Fjöldi:</label>
+          <input class="grid__cart__add-to-cart__input" type="number" id="bakpoki" value="1">
+          <button class="grid__cart__add-to-cart__button">Uppfæra</button>
+          <button class="grid__cart__add-to-cart__button">Eyða úr körfu</button>
         </div>
        </div>
       </div>
@@ -63,13 +63,13 @@
             <div class = "cart__flex-price">
 			<h3 class="grid__h3 --bottom-margin">4.900 kr.-</h3>
 			</div>
-			<div class="flex__cart">
+			<div class="grid__cart">
 			
-            <div class="cart__add-to-cart">
-              <label class="cart__add-to-cart__label" for="kalkpoki">Fjöldi:</label>
-              <input class="cart__add-to-cart__input" type="number" id="kalkpoki" value="1">
-              <button class="cart__add-to-cart__button">Uppfæra</button>
-              <button class="cart__add-to-cart__button">Eyða úr körfu</button>
+            <div class="grid__cart__add-to-cart">
+              <label class="grid__cart__add-to-cart__label" for="kalkpoki">Fjöldi:</label>
+              <input class="grid__cart__add-to-cart__input" type="number" id="kalkpoki" value="1">
+              <button class="grid__cart__add-to-cart__button">Uppfæra</button>
+              <button class="grid__cart__add-to-cart__button">Eyða úr körfu</button>
             </div>
 		   </div>
           </div>
@@ -84,19 +84,19 @@
     <p class="course__text">
   <div>
     <label for="nafn">Nafn:</label>
-    <input class = "course__standard-input" type="text" id="nafn" required>
+    <input class = "grid__standard-input" type="text" id="nafn" required>
   </div>
 
     <div>
       <label for="heimilsfang">Heimilisfang:</label>
-      <input class = "course__standard-input" type="text" id="heimilsfang" required>
+      <input class = "grid__standard-input" type="text" id="heimilsfang" required>
     </div>
 
 
 
         <div>
             <label for="postnumer">Póstnúmer:</label>
-			<select class="course__standard-input" name= "postnumer" id ="postnumer">
+			<select class="grid__standard-input" name= "postnumer" id ="postnumer">
 			<option value = "101">Reykjavík 101</option>
 			<option value = "102">Reykjavík 102</option>
 			<option value = "103">Reykjavík 103</option>
@@ -252,18 +252,18 @@
       <p class="course__text">
       <div>
         <label for="kortanumer">Kortanúmer:</label>
-        <input class = "course__standard-input" type="number" id="kortanumer" required>
+        <input class = "grid__standard-input" type="number" id="kortanumer" required>
       </div>
       <div>
         <label for="korthafi">Korthafi:</label>
-        <input class = "course__standard-input" type="text" id="korthafi" required>
+        <input class = "grid__standard-input" type="text" id="korthafi" required>
       </div>
-      <div>
-        <div class ="flex">
+      <div class = "flex2">
+        
           <span>Gildistími:</span>
-
+		  <div class ="flex">
           <label for="gildistími">Mán</label>
-          <select class = "course__small-input" name="gildistími" id="Gildistími">
+          <select class = "grid__small-input" name="gildistími" id="Gildistími">
             <option selected value> 01 </option>
             <option value="02">02</option>
             <option value="03">03</option>
@@ -279,7 +279,7 @@
           </select>
 
           <label for="gildistími"> Ár </label>
-          <select class = "course__small-input" name="Ár" id="ar">
+          <select class = "grid__small-input" name="Ár" id="ar">
             <option selected value> 2019 </option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
