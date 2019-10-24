@@ -1,5 +1,13 @@
+# Keyrsla verkefnis
 
-# Hópverkefni 1
+# Uppsetning verkefnis
+
+# Höfundar verkefnis
+Baldur Benediktsson          bab42@hi.is
+Rebekka Rut Stefánsdóttir    rrs10@hi.is
+Sveinn Þórarinsson           svt9@hi.is
+
+# Verkefnalýsing og fyrirmæli
 
 Verkefnið felst í því að smíða vef eftir forskrift.
 
