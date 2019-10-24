@@ -3,9 +3,11 @@
 # Uppsetning verkefnis
 
 # Höfundar verkefnis
-Baldur Benediktsson          bab42@hi.is
-Rebekka Rut Stefánsdóttir    rrs10@hi.is
-Sveinn Þórarinsson           svt9@hi.is
+Baldur Benediktsson bab42@hi.is
+
+Rebekka Rut Stefánsdóttir rrs10@hi.is
+
+Sveinn Þórarinsson svt9@hi.is
 
 # Verkefnalýsing og fyrirmæli
 
