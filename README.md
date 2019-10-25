@@ -23,7 +23,7 @@ Meirihluti alls scssins sem við skrifuðum er að finna í grid skjalinu. Við 
 #### staff.scss
 Staff.scss inniheldur scssið sem þarf til þess að stylea staff síðuna.
 
-Þetta er allt importað í styles.scss sem er síðan compileað í styles.css og er notað af HTMLinu.
+Þetta er allt importað í `styles.scss` sem er síðan compileað í `styles.css` og er notað af HTMLinu.
 
 
 # Höfundar verkefnis
