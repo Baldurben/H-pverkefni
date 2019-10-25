@@ -139,14 +139,14 @@
   color: $black;
   text-align: center;
   text-decoration: none;
-  background-color: $blue;
   cursor: pointer;
-  border: 0px;
+  background-color: $blue;
+  border: 0;
   border-radius: 3px;
 
   &:hover {
-    background-color: $orange;
     color: $white;
+    background-color: $orange;
   }
 }
 
@@ -172,13 +172,11 @@
 .grid__cart__add-to-cart__button {
   width: 30%;
   padding: $gutter * 0.5;
-  border: 1px solid $black;
-  border-radius: 3px;
+  margin-right: $gutter * 0.5;
   font-size: 16px;
   cursor: pointer;
-  margin-right: $gutter * 0.5;
-
-
+  border: 1px solid $black;
+  border-radius: 3px;
 
   &:hover {
     background-color: #00b7ff;
@@ -203,26 +201,25 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  
 }
 
-.grid__cart__flex-price{
+.grid__cart__flex-price {
   display: flex;
   height: 60%;
   align-items: flex-end;
 }
 
-.grid__cart__add-to-cart__label{
-  width: 100%
+.grid__cart__add-to-cart__label {
+  width: 100%;
 }
 
 .grid__standard-input {
+  float: right;
   width: 70%;
   padding: $gutter * 0.5;
   margin-bottom: 15px;
   border: 1px solid $black;
   border-radius: 1px;
-  float: right;
 }
 
 .grid__small-input {
@@ -232,13 +229,13 @@
   border-radius: 1px;
 }
 
-.flex {
+.grid__small-input-container-inner {
   display: flex;
-  width:70%;
+  width: 70%;
   justify-content: space-between;
 }
 
-.flex2 {
+.grid__small-input-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: no-wrap;
