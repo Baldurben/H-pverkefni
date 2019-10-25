@@ -1,45 +1,43 @@
 
 .footer {
-  background-color: $blue;
-  padding-left: $gutter;
   padding-right: $gutter;
+  padding-left: $gutter;
+  background-color: $blue;
 }
 
 .footer__container {
-  margin: 0 auto;
   max-width: $max-width;
+  margin: 0 auto;
 }
 
 .footer__row {
   display: flex;
+  padding-top: $gutter * 0.5;
+  margin-right: $gutter * -0.5;
+  margin-left: $gutter * -0.5;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-
-  padding-top: $gutter * 0.5;
-  margin-left: $gutter * -0.5;
-  margin-right: $gutter * -0.5;
 }
 
 .footer__col {
   display: flex;
+  width: 25%;
+  padding-right: $gutter * 0.5;
+  padding-left: $gutter * 0.5;
   flex-direction: column;
 
-  width: 25%;
-  padding-left: $gutter * 0.5;
-  padding-right: $gutter * 0.5;
-
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     width: 50%;
   }
 }
 
 .footer__heading {
   width: 100%;
-  font-size: 24px;
-  color: $black;
   padding-top: $gutter;
   padding-bottom: $gutter;
+  font-size: 24px;
+  color: $black;
 }
 
 .footer__list {
@@ -48,23 +46,24 @@
 
 .footer__list__item {
   width: 100%;
-  list-style: none;
   margin-bottom: $gutter * 0.5;
+  list-style: none;
 }
 
 .footer__list__item__link {
-  color: $white;
   font-size: 16px;
+  color: $white;
   text-decoration: none;
+
   &:hover {
     color: $black;
   }
 }
 
 .footer__copyright {
-  text-align: center;
   width: 100%;
-  font-size: 14px;
   padding-top: $gutter * 2;
   padding-bottom: $gutter * 2;
+  font-size: 14px;
+  text-align: center;
 }

@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="is">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prílihúsið - Námskeið</title>
-
-  <link rel="stylesheet" href="../grid.css">
-  <link rel="stylesheet" href="../styles.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prílihúsið - Námskeið</title>
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
     <header class="header">
@@ -29,95 +28,84 @@
       <div class="grid">
         <div class="grid__row">
           <div class="grid__col grid__col--m-6">
-             <h2 class="grid__h2">Námskeið</h2>
+            <h2 class="grid__h2">Námskeið</h2>
             <p class="grid__text grid--top-margin">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
           </div>
-		  <div class="grid__col grid__col--m-6 grid__col--higher-order">
-              <img class="grid__image" alt="Klifur íþróttarsalur" src="../img/climbing-gym.jpg">
+
+		      <div class="grid__col grid__col--m-6 grid__col--higher-order">
+            <img class="grid__image" alt="Klifur íþróttarsalur" src="../img/climbing-gym.jpg">
+          </div>
+
+			    <div class="grid__col grid__col--m-6">
+		        <h2 class="grid__h2">Almennar upplýsingar</h2>
+            <div>
+              <label for="nafn">Nafn:</label>
+              <input class = "grid__standard-input" type="text" id="nafn" required>
             </div>
-
-
-			 <div class="grid__col grid__col--m-6">
-		  <h2 class="grid__h2">Almennar upplýsingar</h2>
-            <p class="grid__text grid--top-margin"><div>
-            <label for="nafn">Nafn:</label>
-            <input class = "grid__standard-input" type="text" id="nafn" required>
-        </div>
-        <div>
-            <label for="heimilsfang">Heimilisfang:</label>
-            <input class = "grid__standard-input" type="text" id="heimilsfang" required>
-        </div>
-        <div>
-            <label for="aldur">Aldur:</label>
-            <input class = "grid__standard-input" type="text" id="aldur" required>
-        </div>
-        <div>
-            <label for="namskeið">Námskeið:</label>
-			<select class = "grid__standard-input" name= "namskeið" id ="namskeið">
-			<option selected value> V0 - V1 </option>
-			<option value="V2 - V4">V2-V4</option>
-			<option value="V5 - V7">V5-V7</option>
-			<option value="fjallaklifur">Fjallaklifur námskeið</option>
-			</select>
-        </div>
-		</div>
-
-
-
-          <div class="grid__col grid__col--m-6">
-            <h2 class="grid__h2">Greiðsluupplýsingar</h2>
-            <p class="grid__text grid--top-margin">
-		<div>
+            <div>
+              <label for="heimilsfang">Heimilisfang:</label>
+              <input class = "grid__standard-input" type="text" id="heimilsfang" required>
+            </div>
+            <div>
+              <label for="aldur">Aldur:</label>
+              <input class = "grid__standard-input" type="text" id="aldur" required>
+            </div>
+            <div>
+              <label for="namskeið">Námskeið:</label>
+              <select class = "grid__standard-input" name= "namskeið" id ="namskeið">
+                <option selected value> V0 - V1 </option>
+                <option value="V2 - V4">V2-V4</option>
+                <option value="V5 - V7">V5-V7</option>
+                <option value="fjallaklifur">Fjallaklifur námskeið</option>
+              </select>
+            </div>
+          </div>
+        
+        <div class="grid__col grid__col--m-6">
+          <h2 class="grid__h2">Greiðsluupplýsingar</h2>
+		      <div>
             <label for="kortanumer">Kortanúmer:</label>
             <input class = "grid__standard-input" type="text" id="kortanumer" required>
-        </div>
-		<div>
+          </div>
+		      <div>
             <label for="korthafi">Korthafi:</label>
             <input class = "grid__standard-input" type="text" id="korthafi" required>
-        </div>
-		<div class = "flex2">
-			
-			<span>Gildistími:</span>
-
-			<div class="flex">
-            <label for="gildistími">Mán</label>
-            <select class = "grid__small-input" name="gildistími" id="gildistími">
+          </div>
+		      <div class = "flex2">
+			      <span>Gildistími:</span>
+			      <div class="flex">
+              <label for="gildistími">Mán</label>
+              <select class = "grid__small-input" name="gildistími" id="gildistími">
                 <option selected value> 01 </option>
                 <option value="02">02</option>
                 <option value="03">03</option>
                 <option value="04">04</option>
-				<option value="05">05</option>
+				        <option value="05">05</option>
                 <option value="06">06</option>
                 <option value="07">07</option>
                 <option value="08">08</option>
-				<option value="09">09</option>
+				        <option value="09">09</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
                 <option value="12">12</option>
-            </select>
-
-			<label for="gildistími"> Ár </label>
-			 <select class = "grid__small-input" name="ar" id="ar">
+              </select>
+			        <label for="gildistími"> Ár </label>
+			        <select class = "grid__small-input" name="ar" id="ar">
                 <option selected value> 2019 </option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
-       </select>
-		  </div>
-		  </div>
-		  </div>
-		  
-		  <button class="grid__button">Skrá</button>
-
+              </select>
+		        </div>
+		      </div>
+		    </div>
+		    <button class="grid__button">Skrá</button>
         </div>
       </div>
     </main>
-  </body>
-
-
-
-		<footer class="footer">
+  
+    <footer class="footer">
       <div class="footer__container">
         <div class = "footer__row">
 
@@ -166,5 +154,5 @@
         <p class="footer__copyright">&copy; 2019 Prílihúsið</p>
       </div>
     </footer>
-
-<!--Skrá-->
+  </body>
+</html>
