@@ -7,6 +7,8 @@ Nú ætti verkefnið að vera rétt sett upp.
 
 Ef þú ætlar að gera breytingar er hægt að keyra sass-watch sem að fylgist með breytingum innan .SCSS skrám og compilear jafn óðum í .CSS og skipunin fyrir það er: `$ npm run sass-watch`
 
+Síðan til að 'linta' scss kóðann (athuga að uppsetning sé rétt) þá er hægt að keyra `$ npm run lint-scss` fyrir styles.scss skránna og `$ npm run lint-scss-folder` fyrir allar .scss skrár í scss möppunni.
+
 
 # Uppsetning verkefnis
 Í verkefninu erum við með 5 .SCSS skrár sem eru:
