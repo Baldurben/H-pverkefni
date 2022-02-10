@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Baldurben/H-pverkefni#readme",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "@primer/css": "^13.1.0",
